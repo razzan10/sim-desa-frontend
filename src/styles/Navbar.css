@@ -1,0 +1,91 @@
+body {
+  padding-top: 80px;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #ffffff;
+  position: fixed; /* <-- bikin dia nempel terus */
+  top: 0; /* <-- posisinya 0 dari atas */
+  left: 0;
+  right: 0;
+  z-index: 999; /* <-- biar di atas semua */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* shadow biar elegant */
+}
+
+/* Menu Container */
+.navbar-menu {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+/* Each li */
+.navbar-menu li {
+  position: relative;
+}
+
+/* Button Style */
+.DropDown {
+  background: none;
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #1f5130;
+  padding: 0.5rem 0;
+}
+
+.DropDown::after {
+  content: " ▼";
+  font-size: 0.6rem;
+  color: #facc15;
+}
+
+/* Dropdown */
+.DropDown-Content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  list-style: none;
+  z-index: 99;
+  min-width: 220px;
+}
+
+/* Show on Hover */
+.navbar-menu li:hover .DropDown-Content {
+  display: block;
+}
+
+/* Dropdown Items */
+.DropDown-Content li a {
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: #1f5130;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.DropDown-Content li a:hover {
+  background-color: #f4f4f4;
+  color: #000;
+}
+
+.NonDropDown {
+  background: none;
+  border: none;
+}

@@ -1,21 +1,42 @@
 import RazzanPic from "../assets/razzanRianda.jpeg";
 import "../styles/Home.css";
+import { motion } from "framer-motion";
 
 function Home() {
   return (
-    <section className="about">
+    <motion.section
+      className="about"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      viewport={{ once: true, amount: 0.5 }}
+    >
       <div className="container">
-        <h2 className="section-title">Selamat Datang</h2>
+        <motion.h2
+          className="section-title"
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          Selamat Datang
+        </motion.h2>
         <p className="section-subtitle">
           sambutan Kepala Desa SIMULASI WEB DESA
         </p>
 
         <div className="about-content">
           <div className="about-img">
-            <img src="/src/assets/razzanRianda.jpeg" alt="foto razzan" />
+            <img src={RazzanPic} alt="foto razzan" />
           </div>
           <div className="about-text">
-            <p>
+            <motion.p
+              className="section-text"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, ease: "easeOut" }}
+              viewport={{ once: true, amount: 0.5 }}
+            >
               Assalamu’alaikum warahmatullahi wabarakatuh, Salam sejahtera bagi
               kita semua, Dengan penuh rasa syukur, saya menyambut seluruh warga
               dan pengunjung di website resmi Desa Digital. Website ini kami
@@ -30,12 +51,12 @@ function Home() {
               bersama-sama membangun desa yang lebih maju, sejahtera, dan
               berdaya saing di era digital ini. Wassalamu’alaikum warahmatullahi
               wabarakatuh.
-            </p>
-            <h2 className="sectin-title">Razzan Rianda</h2>
+            </motion.p>
+            <h2 className="section-title">Razzan Rianda</h2>
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
+import Berita from "./components/Berita";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Home />
+      <Berita />
       <Footer />
     </>
   );

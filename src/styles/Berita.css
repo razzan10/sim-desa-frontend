@@ -1,0 +1,47 @@
+.berita-section {
+  padding: 60px 20px;
+}
+
+.berita-list {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.berita-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.berita-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.berita-date {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.berita-card p {
+  font-size: 16px;
+  color: #333;
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  background-color: #000;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.read-more-btn:hover {
+  background-color: #444;
+}

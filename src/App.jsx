@@ -4,7 +4,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/navbar";
 import Hero from "./components/hero";
 import Footer from "./components/footer";
-import Berita from "./components/Berita";
+import News from "./pages/News";
 
 function App() {
   return (
@@ -12,7 +12,7 @@ function App() {
       <Navbar />
       <Hero />
       <Home />
-      <Berita />
+      <News />
       <Footer />
     </>
   );

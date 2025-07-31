@@ -44,7 +44,7 @@ function Home() {
               memajukan desa menuju kemandirian berbasis teknologi. Sebagai
               Kepala Desa, saya bersama seluruh perangkat desa berkomitmen untuk
               membangun Desa Digital yang mandiri, maju, dan berdaya saing
-              dengan memanfaatkan teknologi sebagai pilar utama pembangunan.
+              dengan memanfaatkan teknologi sebagai pilar utam  a pembangunan.
               Melalui platform ini, kami berharap dapat memberikan kemudahan
               akses informasi, pelayanan yang lebih baik, serta menjadi jembatan
               komunikasi antara pemerintah desa dan masyarakat. Mari

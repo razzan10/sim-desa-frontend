@@ -11,12 +11,12 @@ body {
   justify-content: space-between;
   padding: 1rem 2rem;
   background-color: #ffffff;
-  position: fixed; /* <-- bikin dia nempel terus */
-  top: 0; /* <-- posisinya 0 dari atas */
+  position: fixed;
+  top: 0;
   left: 0;
   right: 0;
-  z-index: 999; /* <-- biar di atas semua */
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* shadow biar elegant */
+  z-index: 999;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu Container */
@@ -28,12 +28,12 @@ body {
   padding: 0;
 }
 
-/* Each li */
 .navbar-menu li {
   position: relative;
 }
 
-/* Button Style */
+/* Style umum untuk tombol */
+.NonDropDown,
 .DropDown {
   background: none;
   border: none;
@@ -41,16 +41,26 @@ body {
   font-size: 1rem;
   cursor: pointer;
   color: #1f5130;
+  text-decoration: none;
   padding: 0.5rem 0;
+  line-height: 1.5;
+  display: inline-block;
+  transition: color 0.3s ease;
 }
 
+.NonDropDown:hover,
+.DropDown:hover {
+  color: #000;
+}
+
+/* Dropdown arrow */
 .DropDown::after {
   content: " ▼";
   font-size: 0.6rem;
   color: #facc15;
 }
 
-/* Dropdown */
+/* Dropdown menu */
 .DropDown-Content {
   display: none;
   position: absolute;
@@ -65,12 +75,12 @@ body {
   min-width: 220px;
 }
 
-/* Show on Hover */
+/* Show on hover */
 .navbar-menu li:hover .DropDown-Content {
   display: block;
 }
 
-/* Dropdown Items */
+/* Dropdown items */
 .DropDown-Content li a {
   display: block;
   padding: 0.75rem 1.5rem;
@@ -78,14 +88,10 @@ body {
   text-decoration: none;
   font-weight: 500;
   white-space: nowrap;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .DropDown-Content li a:hover {
   background-color: #f4f4f4;
   color: #000;
-}
-
-.NonDropDown {
-  background: none;
-  border: none;
 }

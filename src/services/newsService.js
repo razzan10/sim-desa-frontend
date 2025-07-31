@@ -1,24 +1,23 @@
-import { data } from "autoprefixer";
 import axios from "axios";
 
 const API_URL = "http://localhost:5000/api/news";
 
-export const getAllNews = async () => {
-  try {
-    const res = await axios.get(API_URL);
-    return res.data;
-  } catch (error) {
-    console.log("gagal fetch berita: ", error);
-    return [];
-  }
+// Create
+export const createNews = async (data) => {
+  return (await axios.post(API_URL, data)).data;
 };
 
-export const createNews = async () => {
-  try {
-    const res = await axios.post(API_URL, data);
-    return res.data;
-  } catch (error) {
-    console.log("Berita gagal ditambahkan: ", error);
-    throw error;
-  }
+// Read
+export const getAllNews = async () => {
+  return (await axios.get(API_URL)).data;
+};
+
+// Update
+export const updateNews = async (id, data) => {
+  return (await axios.put(`${API_URL}/${id}`, data)).data;
+};
+
+// Delete
+export const deleteNews = async (id) => {
+  return (await axios.delete(`${API_URL}/${id}`)).data;
 };

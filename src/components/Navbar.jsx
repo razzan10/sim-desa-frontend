@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../styles/Navbar.css";
 
 function Navbar() {
@@ -6,32 +7,34 @@ function Navbar() {
       <h1>DesaKu</h1>
       <ul className="navbar-menu">
         <li>
-          <button className="NonDropDown">Beranda</button>
+          <Link to="/" className="NonDropDown">
+            Beranda
+          </Link>
         </li>
 
         <li>
           <button className="DropDown">Profil Desa</button>
           <ul className="DropDown-Content">
             <li>
-              <a href="#">Visi Misi</a>
+              <Link to="/visi-misi">Visi Misi</Link>
             </li>
             <li>
-              <a href="#">Sejarah</a>
+              <Link to="/sejarah">Sejarah</Link>
             </li>
             <li>
-              <a href="#">Peta Desa</a>
+              <Link to="/peta-desa">Peta Desa</Link>
             </li>
             <li>
-              <a href="#">Struktur Organisasi Desa</a>
+              <Link to="/struktur-organisasi">Struktur Organisasi Desa</Link>
             </li>
             <li>
-              <a href="#">Potensi Alam</a>
+              <Link to="/potensi-alam">Potensi Alam</Link>
             </li>
             <li>
-              <a href="#">Produk Desa</a>
+              <Link to="/produk-desa">Produk Desa</Link>
             </li>
             <li>
-              <a href="#">Fasilitas Umum</a>
+              <Link to="/fasilitas-umum">Fasilitas Umum</Link>
             </li>
           </ul>
         </li>
@@ -40,28 +43,28 @@ function Navbar() {
           <button className="DropDown">PPID</button>
           <ul className="DropDown-Content">
             <li>
-              <a href="#">Profil PPID</a>
+              <Link to="/ppid/profil">Profil PPID</Link>
             </li>
             <li>
-              <a href="#">Maklumat Pelayanan</a>
+              <Link to="/ppid/maklumat">Maklumat Pelayanan</Link>
             </li>
             <li>
-              <a href="#">Jenis Informasi Desa</a>
+              <Link to="/ppid/jenis-informasi">Jenis Informasi Desa</Link>
             </li>
             <li>
-              <a href="#">Struktur PPID</a>
+              <Link to="/ppid/struktur">Struktur PPID</Link>
             </li>
             <li>
-              <a href="#">Regulasi PPID</a>
+              <Link to="/ppid/regulasi">Regulasi PPID</Link>
             </li>
             <li>
-              <a href="#">Panduan Pelayan Desa</a>
+              <Link to="/ppid/panduan">Panduan Pelayan Desa</Link>
             </li>
             <li>
-              <a href="#">Alur Permohonan</a>
+              <Link to="/ppid/permohonan">Alur Permohonan</Link>
             </li>
             <li>
-              <a href="#">Pengajuan Keberatan</a>
+              <Link to="/ppid/keberatan">Pengajuan Keberatan</Link>
             </li>
           </ul>
         </li>
@@ -70,13 +73,13 @@ function Navbar() {
           <button className="DropDown">Lembaga</button>
           <ul className="DropDown-Content">
             <li>
-              <a href="#">BPD</a>
+              <Link to="/lembaga/bpd">BPD</Link>
             </li>
             <li>
-              <a href="#">LPM</a>
+              <Link to="/lembaga/lpm">LPM</Link>
             </li>
             <li>
-              <a href="#">PKK</a>
+              <Link to="/lembaga/pkk">PKK</Link>
             </li>
           </ul>
         </li>
@@ -85,10 +88,10 @@ function Navbar() {
           <button className="DropDown">Informasi</button>
           <ul className="DropDown-Content">
             <li>
-              <a href="#">Berita Desa</a>
+              <Link to="/news">Berita Desa</Link>
             </li>
             <li>
-              <a href="#">Data Desa</a>
+              <Link to="/data-desa">Data Desa</Link>
             </li>
           </ul>
         </li>
@@ -97,34 +100,36 @@ function Navbar() {
           <button className="DropDown">Publikasi</button>
           <ul className="DropDown-Content">
             <li>
-              <a href="#">APBDes</a>
+              <Link to="/publikasi/apbdes">APBDes</Link>
             </li>
             <li>
-              <a href="#">RPJMDes</a>
+              <Link to="/publikasi/rpjmdes">RPJMDes</Link>
             </li>
             <li>
-              <a href="#">RKPDes</a>
+              <Link to="/publikasi/rkpdes">RKPDes</Link>
             </li>
             <li>
-              <a href="#">RAPBDes</a>
+              <Link to="/publikasi/rapbdes">RAPBDes</Link>
             </li>
             <li>
-              <a href="#">Alokasi Dana Desa</a>
+              <Link to="/publikasi/alokasi-dana">Alokasi Dana Desa</Link>
             </li>
             <li>
-              <a href="#">Dana Desa</a>
+              <Link to="/publikasi/dana-desa">Dana Desa</Link>
             </li>
             <li>
-              <a href="#">Produk Hukum</a>
+              <Link to="/publikasi/produk-hukum">Produk Hukum</Link>
             </li>
             <li>
-              <a href="#">SK Kepala Desa</a>
+              <Link to="/publikasi/sk-kades">SK Kepala Desa</Link>
             </li>
           </ul>
         </li>
 
         <li>
-          <button className="NonDropDown">Administrasi</button>
+          <Link to="/administrasi" className="NonDropDown">
+            Administrasi
+          </Link>
         </li>
       </ul>
     </nav>
